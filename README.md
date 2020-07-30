@@ -13,7 +13,7 @@ Cada utilizador atualiza o seu estado de saúde e tem acesso a um dashboard que 
 ### Imagens dos menus
 
 <p float="left">
-  <img src="images/1.jpeg" width="300" />
-  <img src="images/2.jpeg" width="300" /> 
-  <img src="images/3.jpeg" width="300" />
+  <img src="images/1.jpeg" width="250" />
+  <img src="images/2.jpeg" width="250" /> 
+  <img src="images/3.jpeg" width="250" />
 </p>
