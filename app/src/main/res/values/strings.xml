@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Covidmeter</string>
+
+    <string name="facebook_app_id">2530689490528540</string>
+    <string name="fb_login_protocol_scheme">fb2530689490528540</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update_state_btn_text">Atualizar Estado</string>
+    <string name="zero_symptoms_info_text">Sem sintomas</string>
+    <string name="question_state_actual">Qual é o seu estado atual?</string>
+    <string name="ask_symptom_string">Apresenta algum sintoma?</string>
+    <string name="confirm_button">Confirmar</string>
+
+    <string-array name="List_choices">
+        <item name="helthy_choice">Presumidamente saudável</item>
+        <item name="infected_choice">Infeção confirmada</item>
+        <item name="suspect_choice">Caso suspeito</item>
+        <item name="recovered_choice">Recuperado</item>
+    </string-array>
+
+    <string-array name="Info_texts">
+        <item name="helthy">Sem sintomas</item>
+        <item name="symptoms">Com sintomas</item>
+        <item name="suspects">Suspeitos</item>
+        <item name="infected">Infetados</item>
+    </string-array>
+
+</resources>

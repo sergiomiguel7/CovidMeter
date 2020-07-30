@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">#1D29A3</item>
+    </style>
+
+
+    <style name="location_style">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/location_roud_shape</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="update_button_style">
+        <item name="android:background">@drawable/update_state_shape</item>
+    </style>
+
+    <style name="confirm_state_style">
+        <item name="android:background">@drawable/background_shape</item>
+    </style>
+
+    <style name="info_style">
+        <item name="android:background">@drawable/info_back</item>
+    </style>
+
+</resources>

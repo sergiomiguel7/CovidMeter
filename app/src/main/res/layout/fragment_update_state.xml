@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.UpdateStateFragment">
+
+    <TextView
+        android:id="@+id/ask_symptom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/ask_symptom_string"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSymptoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ask_symptom"
+        android:layout_centerHorizontal="true"
+
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/symptomsRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ask_symptom" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/ask_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewSymptoms"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/question_state_actual"
+        android:textColor="#000"
+        android:textSize="20sp"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ask_state"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ask_state"
+
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewState"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/confirm_button"
+        style="@style/confirm_state_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardViewState"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="updateUserSymptoms"
+        android:text="@string/confirm_button"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>
